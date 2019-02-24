@@ -11,8 +11,13 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Year7019 start" startnode="1" creator="Twine" creator-version="2.2.1" ifid="DA214A1E-96DC-4A38-BFB2-EBD51A955359" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+<tw-storydata name="Year7019 start" startnode="1" creator="Twine" creator-version="2.2.1" ifid="DA214A1E-96DC-4A38-BFB2-EBD51A955359" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">html.Hist1 body {
+	background-image: url('https://media1.giphy.com/media/uFurYklsNY9Vu/giphy.gif?cid=3640f6095c6deca2425037487728885c');
+}
+
+html.Hist2 body {
+	background-image: url('https://media.giphy.com/media/XoM3emYvHrNQXWKKSK/giphy.gif');
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
 </script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="725,474" size="100,100">START 
 
 Finding Links:
@@ -80,16 +85,23 @@ The importance of these items can only be unlocked once you have entered the app
 	(set: $counter to it - 1)
 	(if: $counter is 0)[(go-to: &quot;Choices&quot;)]
 ]
-</tw-passagedata><tw-passagedata pid="7" name="Bionic Eye" tags="" position="1544,525" size="100,100">Double-click this passage to edit it.
+</tw-passagedata><tw-passagedata pid="7" name="Bionic Eye" tags="" position="1564,525" size="100,100">&lt;h2&gt;Bionic Eye &lt;/h2&gt;
+Double-click this passage to edit it.
 
-&lt;img src=&quot;https://media3.giphy.com/media/DWghy4UvjMDHG/giphy.gif?cid=3640f6095c6def526535316255df9261&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="Air Samples" tags="" position="1346,672" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Bionic Medication" tags="" position="1236,672" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Letters to Civilation" tags="" position="1504,655" size="100,100">[[Critical Transmission]] 
-[[Transmission 1]] </tw-passagedata><tw-passagedata pid="11" name="Hist6" tags="" position="1082,727" size="100,100">We hope that the entity that finds this time capsule can use our research data and technology to not only save themselves and other civilizations from climate change, but also help us revive our ruined planet, and rebuild our once-glorious civilization.</tw-passagedata><tw-passagedata pid="12" name="Choices" tags="" position="1485,347" size="100,100">Enter your code below:
-
-(set: $code to (prompt: &quot;Enter your code: &quot;, &lt;&lt;textbox $code&gt;&gt;))
-(if: $code is &quot;12345&quot;)[[Bionic Eye]]
-(if: $code is &quot;54321&quot;)[[Air Samples]]
-(if: $code is &quot;00000&quot;)[[Bionic Medication]]
-(if: $code is &quot;99999&quot;) [[Letters to Civilation]]</tw-passagedata><tw-passagedata pid="13" name="Transmission 1" tags="" position="888,605" size="100,100">If any of you from a future civilation is reading this, we urge you to read this message about our last moments before our civilation had fallen.
+&lt;img src=&quot;https://media3.giphy.com/media/DWghy4UvjMDHG/giphy.gif?cid=3640f6095c6def526535316255df9261&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name="Air Samples" tags="" position="1346,672" size="100,100">&lt;h2&gt;Air Samples &lt;/h2&gt;</tw-passagedata><tw-passagedata pid="9" name="Bionic Medication" tags="" position="1236,672" size="100,100">&lt;h2&gt;Bionic Meds &lt;/h2&gt;
+Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Letters to Civilation" tags="" position="1504,655" size="100,100">&lt;h2&gt;Letters to Civilation &lt;/h2&gt;
+[[Critical Transmission]] 
+[[Transmission 1]] </tw-passagedata><tw-passagedata pid="11" name="Hist6" tags="" position="1082,727" size="100,100">We hope that the entity that finds this time capsule can use our research data and technology to not only save themselves and other civilizations from climate change, but also help us revive our ruined planet, and rebuild our once-glorious civilization.</tw-passagedata><tw-passagedata pid="12" name="Choices" tags="" position="1485,347" size="100,100">(set: $code to &quot;&quot;)
+(set: $code to (prompt: &quot;Enter your code: &quot;, &quot;53759&quot;))
+(set: $pas1 to &quot;12345&quot;)
+(set: $pas2 to &quot;54321&quot;)
+(set: $pas3 to &quot;00000&quot;)
+(set: $pas4 to &quot;99999&quot;)
+(if: $code is $pas1)[(goto: &quot;Bionic Eye&quot;)]
+(if: $code is $pas2)[(goto: &quot;Air Samples&quot;)]
+(if: $code is $pas3)[(goto:&quot;Bionic Medication&quot;)]
+(if: $code is $pas4)[(goto:&quot;Letters to Civilation&quot;)]
+(else:)[Invalid Input Received. Try Again. [[Choices]]]</tw-passagedata><tw-passagedata pid="13" name="Transmission 1" tags="" position="888,605" size="100,100">If any of you from a future civilation is reading this, we urge you to read this message about our last moments before our civilation had fallen.
 For many years, we had fought an environmental catastrophe that scourged our world. Thoug hwe fought our best, we failed to stop this catastrophe from ravaging our planet. Now we must leave our legacy for you to stop this catastrophe.</tw-passagedata><tw-passagedata pid="14" name="Critical Transmission" tags="" position="759,608" size="100,100">To the civilation reading this transmission,
 
 You are the last hope for humanity&#39;s civilation. Long ago, we recognized the environmental threat known as global warming, and knowingly and recognizing the catastrophic impact that it posed to our planet, we attempted to combat it by developing and innovating many effictive and practical solutions. We attempted to implement these solutions, but our politicians interfered with the implementation of these solutions. We managed to convince them of the dangers of global warming, but it was too late. By the time our politicians heeded our warmings, global warming had been sourgig our environment. Though we gave it our all, global warming ultimately ravaged our civilation, and we were forced to resort to cybernetics to survive. We leave our legacy and research to you, hoping that we can save future civilations from this sourge called globabl warming, and that you can revive our planet and rebuild our once glorious civilation.</tw-passagedata><tw-passagedata pid="15" name="StyleSheet" tags="" position="415,396" size="100,100">html.Hist1 body {
